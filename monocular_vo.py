@@ -1,7 +1,7 @@
 import time
 import cv2
 
-class FivePointAlgoeithm:
+class FivePointAlgorithm:
     def __init__(self):
         pass
 
