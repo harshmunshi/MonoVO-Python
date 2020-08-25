@@ -6,6 +6,7 @@ class FeatureExtractor:
     def __init__(self):
         # initalize all types of feature extractors here
         self.extractor = cv2.ORB()
+        # self.extractor = cv2.SIFT()
     
     def find_keypoints(self, images):
         # convert the image to grayscale first
