@@ -19,7 +19,7 @@ class Loader:
             # make an iterable dataset that can be fetched using next
             self.cap = iter(os.listdir(self.path))
 
-    def load_image(self, idx) :
+    def load_frame(self) :
         if (self.loader_types == "video"):
             ret, frame = cap.read()
             return frame
@@ -27,7 +27,7 @@ class Loader:
             frame = next(self.cap)
             frame = cv2.imread(frame)
             return frame
-            
+
 def unittest():
     L = Loader(_type="images", pathname="/home/hmunsh2s/vo/")
     L._printStat()
